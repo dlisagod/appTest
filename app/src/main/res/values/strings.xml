@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">appTest</string>
     <string name="title_activity_search">SearchActivity</string>
+    <string name="group_name">群名称</string>
+    <string name="group_hobby">群爱好</string>
+    <string name="group_descript">群描述</string>
+    <string name="group_create">创建</string>
 </resources>
