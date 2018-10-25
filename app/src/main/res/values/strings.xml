@@ -5,4 +5,6 @@
     <string name="group_hobby">群爱好</string>
     <string name="group_descript">群描述</string>
     <string name="group_create">创建</string>
+    <string name="group_member">群成员</string>
+    <string name="invite_new_member">邀请</string>
 </resources>
