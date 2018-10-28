@@ -1,13 +1,10 @@
 package com.example.apptest;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.apptest.secondLevel.CreateActivity;
@@ -21,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button_create_group = findViewById(R.id.button_create_group);
-        button_search_group = findViewById(R.id.button_search_group);
+        button_search_group = findViewById(R.id.button_to_search_group);
         button_create_group.setOnClickListener(this);
         button_search_group.setOnClickListener(this);
         setDarkStatusIcon(true);
@@ -34,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this, CreateActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.button_search_group:
+            case R.id.button_to_search_group:
                 intent = new Intent(this, SearchActivity.class);
                 startActivity(intent);
         }
@@ -58,4 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             decorView.setSystemUiVisibility(vis);
         }
     }
+
+
 }

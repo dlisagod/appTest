@@ -7,4 +7,5 @@
     <string name="group_create">创建</string>
     <string name="group_member">群成员</string>
     <string name="invite_new_member">邀请</string>
+    <string name="search">搜索</string>
 </resources>
