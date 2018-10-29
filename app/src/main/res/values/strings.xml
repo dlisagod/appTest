@@ -8,4 +8,6 @@
     <string name="group_member">群成员</string>
     <string name="invite_new_member">邀请</string>
     <string name="search">搜索</string>
+    <string name="search_apply">请求加入</string>
+    <string name="search_descript">群描述</string>
 </resources>

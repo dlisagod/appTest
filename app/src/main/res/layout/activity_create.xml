@@ -15,8 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rec_input"
         android:clickable="false"
         app:layout_constraintBottom_toTopOf="@id/group_name"
@@ -27,16 +27,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="@string/group_member"
         android:textColor="#000"
-        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="@id/topView"
         app:layout_constraintEnd_toEndOf="@id/topView"
-        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@id/topView"
         app:layout_constraintTop_toTopOf="@id/topView"
-        />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ListView
         android:id="@+id/listView_create"
@@ -53,16 +52,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="@string/invite_new_member"
         android:textColor="#1C86EE"
-        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="@id/topView"
         app:layout_constraintEnd_toEndOf="@id/topView"
-        app:layout_constraintVertical_bias="0.95"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="@id/topView"
         app:layout_constraintTop_toTopOf="@id/topView"
-        />
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
         android:id="@+id/button_create_add"
@@ -80,8 +78,8 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rec_input"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/group_hobby"
@@ -102,8 +100,8 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rec_input"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/group_descript"
@@ -123,11 +121,10 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rec_input"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@id/button_create"
         app:layout_constraintTop_toBottomOf="@id/group_hobby">
 
         <android.support.design.widget.TextInputEditText
@@ -139,21 +136,26 @@
             android:hint="@string/group_descript" />
     </android.support.design.widget.TextInputLayout>
 
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
     <Button
         android:id="@+id/button_create"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rec_button_create"
         android:text="@string/group_create"
         android:textColor="#ffffff"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintTop_toTopOf="@id/guideline" />
 
 </android.support.constraint.ConstraintLayout>
