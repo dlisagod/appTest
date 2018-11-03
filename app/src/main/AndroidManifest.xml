@@ -20,7 +20,8 @@
         </activity>
         <activity
             android:name=".secondLevel.CreateActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".secondLevel.SearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -28,6 +29,11 @@
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
+
+        <activity
+            android:name=".secondLevel.ApplicationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".secondLevel.ProfileActivity"></activity>
     </application>
 
 </manifest>
